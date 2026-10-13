@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>GitHub Repository Explorer</h1>
+        <p>Discover and explore GitHub repositories</p>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Find Repositories</h2>
+            <p>Search projects by name, keyword or programming language.</p>
+
+            <form id="searchForm">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Example: calculator, portfolio, weather"
+                    required
+                >
+
+                <select id="languageFilter">
+                    <option value="">All Languages</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="PHP">PHP</option>
+                    <option value="TypeScript">TypeScript</option>
+                </select>
+
+                <button type="submit" id="searchButton">Search</button>
+            </form>
+
+            <p id="status"></p>
+        </section>
+
+        <section class="results-section">
+            <h2>Repository Results</h2>
+            <div id="results" class="results-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>GitHub Repository Explorer | Major Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
